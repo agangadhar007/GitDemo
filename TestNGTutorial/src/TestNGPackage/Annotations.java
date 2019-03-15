@@ -69,3 +69,4 @@ public class Annotations {
 		System.out.println("First in the class");
 	}
 }
+//Testing purpose only
