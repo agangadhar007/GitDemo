@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">  
+<listeners>
+<listener class-name="TestNGPackage.Listeners"/>
+</listeners>
+<parameter name="URL" value="www.HDFCbank.com"/>
+<parameter name="USERNAME" value="Gangadhar.A"/>
+	<test thread-count="5" name="CarLoan">
+	
+		<classes>
+			<class name="TestNGPackage.CarLoan">
+				<methods>
+					<exclude name="CarLoanMobile"> //Excluding a particular testcase from a
+						class
+					</exclude>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="HomeLoan">
+		<classes>
+			<class name="TestNGPackage.HomeLoan">
+				<methods>
+					<exclude name="Test.*"> //Excluding a particular testcase using
+						Regular expression from a class
+					</exclude>
+				</methods>
+			</class>
+
+			<class name="TestNGPackage.Annotations">
+				<methods>
+					<include name="PersonalLoanAPI"> //Including only a particular testcase from
+						a class
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

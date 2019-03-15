@@ -1,0 +1,9 @@
+12:22:40.759 [main] ERROR Alpha.DemoLogging - error mode
+12:22:40.776 [main] FATAL Alpha.DemoLogging - fatal mode
+12:26:57.267 [main] DEBUG Alpha.DemoLogging - Debugging mode
+12:26:57.270 [main] INFO  Alpha.DemoLogging - Info mode
+12:26:57.270 [main] ERROR Alpha.DemoLogging - error mode
+12:26:57.270 [main] FATAL Alpha.DemoLogging - fatal mode
+12:28:06.830 [main] DEBUG Alpha.DemoLogging - Debugging mode
+12:28:06.835 [main] INFO  Alpha.DemoLogging - Info mode
+12:28:06.835 [main] ERROR Alpha.DemoLogging - error mode
